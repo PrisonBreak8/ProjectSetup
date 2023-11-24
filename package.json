@@ -1,10 +1,18 @@
 {
 	"devDependencies": {
+		"commitizen": "^4.3.0",
+		"cz-conventional-changelog": "^3.3.0",
 		"husky": "^8.0.3",
 		"lint-staged": "^15.1.0"
 	},
 	"scripts": {
+		"commit": "cz",
 		"prepare": "husky install",
 		"test": ""
+	},
+	"config": {
+		"commitizen": {
+			"path": "./node_modules/cz-conventional-changelog"
+		}
 	}
 }
